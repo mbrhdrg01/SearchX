@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "natural-reserve-350312",
+  "private_key_id": "962d0021456a16991b9cbf9e90525f0d4a172b9c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCls9dDvWHXDc11\nHzQxO9r/Ycg/zxfiNeQP1QNuexEUEE8kZWQC/ufc2Uu+0ZcWdtBfwp3mmtuH+Y2J\nHy1JKmvqJTGVBgB1p/eLtuT7SBoz/AuG1cK/J7QEfky6XZfEeBZxNWgskIjUEq/z\nUzBzNQE7t5DcNSPqtMtgLlc0u2W4kdfKjrrq0oBN8MUaB6DlzKv/oCGBJobGBJQj\n7OSVqv7H9/RL//IgCn0YNS/6nVOlXKQJqbI1bsRNpfWUm/VYr5zKoEi31JN+L+VN\nn+s7EC+p8Qq0TFQqDECmDmv2J43czhiMw/9DvihuzypFZZsldVKHabp91TEwS7fa\n168fn7ZNAgMBAAECggEADCo10DKjxNwDN2lWYD7wBvZbcy51pxUkbHJ2UV1rlY4q\nS+u9pJKo3F0qOGoUA4GELrjk9WcXstXZVDXGZ1axRtFQNeE+QLpXbBm97yIN+mmz\nQZoz3+tpmzgtKIlyeOlatxj1UEA+1gLr3ps+4AEGLtIn1Q15rjjJAtikF6pM/3hn\nKVdk8XroLXeHWGi8opAG1sqRLft2p1KUF8QIusCLs/MnPnTBQfUPNg3d8z2RSGUE\nlmoukXI+cKtX2sCz5ILnnNsGwjnkvJOESNh3ZKbex8hsPBGXDhNxxWtQEGtxIpul\nxEGGThznD2Vij00KnBd3dBdHYU8xvzWEwVnRXVzlwQKBgQDio/DNn8XmlWftXqcm\ncLU5gMnktZHrfIyEi0qdKAzgglXQUgNa94wgRxDEp0X129UZeAa8/sDRUT/HRvLx\n9dXuhSEVtctmV917LCWITPzXpwQQBroWgmhUNlqYbIgw5XjWQ2UUMVcuCg+sRdmx\n+khEm4KH8XRKYWhVVcytzkaYqQKBgQC7KwV0N4MhRjBnXE7dP4eI1ar/uBJ/Zlky\nMsmgWYIbVkJx7cjRHd7j3qusSVQTOj4rNyR763i2R9Lfw4DcO0rURkdaB/7x2fAK\nesGQznTHkirykHVOl7juV2HOukfXqRN5ajhLifwA8KAH8nF0H1MIjaaquyKgutmq\n3xNNjgbDBQKBgQDiUn40iHmSwt4Ojzfxzhla+/4g8yRteWnFLmfrOkRpqh3RsySA\nobV/whe/mZ7mXomWLmLkNq4MGMvMz0/qSelBkBYy3ODqKZIV30b3rpHLNJB9BIqt\n0bonZkPf9HmoAm9B3/k/SepaIlf2W6aB8YJbaMPXx0muwUjz9oM3iUa8SQKBgC+e\nmHqjDQfQNcx2XdJIsZEM277H9FzZi2QMK+RSIZoW7jzSRL9/nA/ZvU/OMEfcD6kr\nFGs607F8wJgRw51EsJslbk3nruOVkU75QHo5LNkBxU+FlXLzgyeQr9/K4TBrYfsI\nHV6KssUCc5TSCC+FMLkCYR8bEYpXP74Ll3up4OqJAoGAHxLZ433Il4Ir2dV/P+w/\n7d96ZXCMaWgWGMQIeOTykXftjFs4jCqo/GbdwTdqrzMVIaly0zeoyP5D/WnSqqh5\ndczgdPNMj4QLuyIL7JnZoP+rSc/EciHklLCfRGMqbRLKwgR5k4YacU8irPLzme+R\ng3wDGO9MfRV++RAPbOGwym8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mfc-m6psruhbinsw44ml7l91iu10n4@natural-reserve-350312.iam.gserviceaccount.com",
+  "client_id": "102312633177042105943",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mfc-m6psruhbinsw44ml7l91iu10n4%40natural-reserve-350312.iam.gserviceaccount.com"
+}
