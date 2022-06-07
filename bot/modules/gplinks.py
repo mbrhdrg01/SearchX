@@ -23,7 +23,7 @@ def gplinks_gp(update, context):
     if not link:      
        sendMessage("Something went wrong\nTry again later..", context.bot, update)
     else:
-       sendMessage(f"<b>⚙️ Here is Your Link 👇</b>\n\n<code>/clone@MMLeechv7_bot {link}</code>\n\n<b>📬 Ownerd By : #ZKP143</b>", context.bot, update)
+       sendMessage(f"<b><i>🔗 Yᴏᴜʀ Lɪɴᴋ 𝐁𝐲-𝐏𝐚𝐬𝐬𝐞𝐝 😜</i></b>\n\n<b>📤 Yᴏᴜʀ Lɪɴᴋ :</b> <code>/clone@MMLeechv7_bot {link}</code>\n\n<b>📬 Oᴡɴᴇʀᴅ Bʏ : #ZKP143</b>", context.bot, update)
 
 
 gplink_handler = CommandHandler("gplinks", gplinks_gp,
