@@ -222,6 +222,7 @@ class GoogleDriveHelper:
             LOGGER.error(f"{msg}")
             return msg
         msg = ""
+        buttons = []
         try:
             meta = self.getFileMetadata(file_id)
             status.set_source_folder(meta.get('name'), self.__G_DRIVE_DIR_BASE_DOWNLOAD_URL.format(meta.get('id')))
@@ -234,10 +235,15 @@ class GoogleDriveHelper:
                 msg += f"\n<b>Type: </b>Folder"
                 msg += f"\n<b>SubFolders: </b>{self.total_folders}"
                 msg += f"\n<b>Files: </b>{self.total_files}"
-                msg += f'\n\n<a href="{self.__G_DRIVE_DIR_BASE_DOWNLOAD_URL.format(dir_id)}">Drive Link</a>'
+                # msg += f'\n\n<b><a href="{self.__G_DRIVE_DIR_BASE_DOWNLOAD_URL.format(dir_id)}">Drive Link</a></b>'
+                
+                url = self.__G_DRIVE_BASE_DOWNLOAD_URL.format(file.get("id"))
+                buttons.append([InlineKeyboardButton("Drive Link", url=url)])
+
                 if DRIVE_INDEX_URL is not None:
                     url = requests.utils.requote_uri(f'{DRIVE_INDEX_URL}/{meta.get("name")}/')
-                    msg += f' | <a href="{url}">Index Link</a>'
+                    # msg += f' <b>| <a href="{url}">Index Link</a></b>'
+                    buttons.append([InlineKeyboardButton("Index Link", url=url)])
             else:
                 file = self.copyFile(meta.get('id'), parent_id, status)
                 try:
@@ -245,9 +251,7 @@ class GoogleDriveHelper:
                 except:
                     typ = 'File' 
                 msg += f'<b>Filename: </b><code>{file.get("name")}</code>'
-                
-                buttons = []
-         
+                                         
                 try:
                     msg += f'\n<b>Size: </b>{get_readable_file_size(int(meta.get("size", 0)))}'
                     msg += f'\n<b>Type: </b>{typ}'
