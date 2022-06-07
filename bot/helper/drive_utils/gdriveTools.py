@@ -250,8 +250,7 @@ class GoogleDriveHelper:
                     typ = file.get('mimeType')
                 except:
                     typ = 'File' 
-                msg += f'<b>Filename: </b><code>{file.get("name")}</code>'
-                                         
+                msg += f'<b>Filename: </b><code>{file.get("name")}</code>'                                        
                 try:
                     msg += f'\n<b>Size: </b>{get_readable_file_size(int(meta.get("size", 0)))}'
                     msg += f'\n<b>Type: </b>{typ}'
@@ -281,7 +280,7 @@ class GoogleDriveHelper:
             else:
                 msg = str(err)
             LOGGER.error(f"{msg}")
-        return msg, buttons
+        return msg, InlineKeyboardMarkup(buttons)
 
     def cloneFolder(self, name, local_path, folder_id, parent_id, status):
         LOGGER.info(f"Syncing: {local_path}")
