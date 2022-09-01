@@ -8,7 +8,7 @@ from bot import APPDRIVE_EMAIL, APPDRIVE_PASS, GDTOT_CRYPT
 from bot.helper.ext_utils.exceptions import DDLException
 
 print('Downloading Cloud-Scraper...')
-!pip install cloudscraper
+pip install cloudscraper
 print('Setting Up!')
 print('Performing Check...')
 import time
