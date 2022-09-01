@@ -3,7 +3,7 @@ from bot import AUTHORIZED_CHATS, dispatcher
 from bot.helper.ext_utils.bot_utils import new_thread
 from bot.helper.telegram_helper.filters import CustomFilters
 from bot.helper.telegram_helper.message_utils import sendMessage, deleteMessage
-from bot.helper.ext_utils.parser import get_gp_link
+from bot.helper.ext_utils.parser import gplinks
 
 @new_thread
 def gplinks_gp(update, context):
