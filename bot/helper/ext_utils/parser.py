@@ -12,6 +12,8 @@ from bs4 import BeautifulSoup
 from bot import APPDRIVE_EMAIL, APPDRIVE_PASS, GDTOT_CRYPT
 from bot.helper.ext_utils.exceptions import DDLException
 
+url = ''
+
 account = {
     'email': APPDRIVE_EMAIL, 
     'passwd': APPDRIVE_PASS
