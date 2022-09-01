@@ -18,7 +18,7 @@ def gplinks_gp(update, context):
        return
 
     m = sendMessage('<b>🔄 Please Wait Bypassing Your Gplinks.... 😎</b>', context.bot, update)
-    link = get_gp_link(query)
+    link = gplinks(query)
     deleteMessage(context.bot, m)
     if not link:      
        sendMessage("Something went wrong\nTry again later..", context.bot, update)
