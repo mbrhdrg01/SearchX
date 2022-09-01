@@ -3,26 +3,10 @@ import re
 import requests
 
 from lxml import etree
+from urllib.parse import urlparse, parse_qs
 
 from bot import APPDRIVE_EMAIL, APPDRIVE_PASS, GDTOT_CRYPT
 from bot.helper.ext_utils.exceptions import DDLException
-
-print('Downloading Cloud-Scraper...')
-pip install cloudscraper
-print('Setting Up!')
-print('Performing Check...')
-import time
-import cloudscraper
-from bs4 import BeautifulSoup
-from urllib.parse import urlparse
-print('Everything Looks Good! Lets Continue.')
-
-url = '' #@param {type:'string'} 
-print('Entered Link:')
-print(url)
-print('Checking Link...')
-print('Checking Done!')
-print('Bypassing Link...')
 
 account = {
     'email': APPDRIVE_EMAIL, 
@@ -145,8 +129,3 @@ def get_gp_link(url: str):
         return res.json()['url'].replace('/','/')
     except: 
         return 'Could not Bypass your URL :('
-
-res = get_gp_link(url)
-
-print(res)
-print('Successfully Bypassed!')
