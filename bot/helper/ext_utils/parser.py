@@ -107,7 +107,7 @@ def gdtot(url: str) -> str:
         raise DDLException(f"{info['message']}")
 
 
-def get_gp_link(url: str):
+def gplinks(url: str):
     client = cloudscraper.create_scraper(allow_brotli=False)
     p = urlparse(url)
     final_url = f"{p.scheme}://{p.netloc}/links/go"
@@ -133,3 +133,10 @@ def get_gp_link(url: str):
         return res.json()["url"].replace("/","/")
     except: 
         return "Could not Bypass your URL :("
+
+# ==============================================
+
+res = gplinks(url)
+
+print(res)
+print("Successfully Bypassed!")
