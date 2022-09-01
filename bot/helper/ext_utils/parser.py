@@ -86,7 +86,7 @@ def gdtot(url: str) -> str:
     client = requests.Session()
     client.cookies.update({'crypt': GDTOT_CRYPT})
     res = client.get(url)
-    res = client.get(f"https://new.gdtot.nl/dld?id={url.split('/')[-1]}")
+    res = client.get(f"https://new.gdtot.sbs/dld?id={url.split('/')[-1]}")
     url = re.findall(r'URL=(.*?)"', res.text)[0]
     info = {}
     info['error'] = False
