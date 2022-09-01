@@ -133,10 +133,3 @@ def get_gp_link(url: str):
         return res.json()["url"].replace("/","/")
     except: 
         return "Could not Bypass your URL :("
-
-# ==============================================
-
-res = get_gp_link(url)
-
-print(res)
-print("Successfully Bypassed!")
