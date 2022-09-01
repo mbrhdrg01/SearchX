@@ -3,7 +3,7 @@ from bot import AUTHORIZED_CHATS, dispatcher
 from bot.helper.ext_utils.bot_utils import new_thread
 from bot.helper.telegram_helper.filters import CustomFilters
 from bot.helper.telegram_helper.message_utils import sendMessage, deleteMessage
-from bot.helper.ext_utils.parser import gplinks
+from bot.helper.ext_utils.parser import get_gp_link
 
 @new_thread
 def gplinks_gp(update, context):
@@ -18,7 +18,7 @@ def gplinks_gp(update, context):
        return
 
     m = sendMessage('<b>🔄 Please Wait Bypassing Your Gplinks.... 😎</b>', context.bot, update)
-    link = gplinks(query)
+    link = get_gp_link(query)
     deleteMessage(context.bot, m)
     if not link:      
        sendMessage("Something went wrong\nTry again later..", context.bot, update)
